@@ -34,7 +34,6 @@ int main()
     printSubSeparator();
 
     std::cout << "#2 Testing 1 Tree with 2 Branches and a registry" << std::endl;
-#if DEGUB
     registry = Registry();
     tree = new Tree("sapin");
     branch = Branch(5, 44);
@@ -45,7 +44,8 @@ int main()
     registry.addTree(tree);
     std::cout << registry.getList()[0]->getName() << std::endl;
     printSubSeparator();
-
+#if DEGUB
+    
     std::cout << "#6 Testing a lumberjack" << std::endl;
     Lumberjack lumberjack = Lumberjack();
     tree = new Tree("sapin");

@@ -96,7 +96,7 @@ Branch *Tree::removeLastBranch()
 void Tree::listBranches()
 {
     std::cout << "List of branches ID:Length" << std::endl;
-    for (int i = 0; i < _nBranches; ++i)
+    for (int i = 0; i < _nBranches; i++)
     {
         if (_branches[i] != nullptr)
         {
