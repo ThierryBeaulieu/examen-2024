@@ -1,7 +1,7 @@
+import { Routes, Route } from 'react-router-dom';
 import AboutPage from './About';
 import AccueilPage from './Accueil';
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const routes = [

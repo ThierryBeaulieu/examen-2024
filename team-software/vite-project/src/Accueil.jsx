@@ -1,7 +1,11 @@
 import './App.css';
 
 function AccueilPage() {
-  return <>Il s'agit de la page d'acceuil</>;
+  return (
+    <>
+      <p>Welcome to the CS Games</p>
+    </>
+  );
 }
 
 export default AccueilPage;

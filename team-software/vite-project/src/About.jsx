@@ -1,7 +1,7 @@
 import './App.css';
 
 function AboutPage() {
-  return <>Il s'agit de la page about</>;
+  return <>This is the about page</>;
 }
 
 export default AboutPage;
