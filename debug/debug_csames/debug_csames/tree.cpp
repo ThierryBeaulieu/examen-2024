@@ -27,7 +27,7 @@ Swing *Tree::getSwing()
 
 void Tree::addBranch(Branch branch)
 {
-    if (_nBranches < _maxBranches)
+    if (_nBranches <= _maxBranches)
     {
         Branch **temp = new Branch *[_maxBranches];
         for (int i = 0; i <= _nBranches; ++i)
@@ -43,7 +43,7 @@ Tree::Tree(std::string name)
 {
     _name = name;
     _swing = nullptr;
-    _nBranches = STARTING_LENGTH;                             
+    _nBranches = STARTING_LENGTH;
 }
 
 void Tree::acceptVisitor(Visitor *visitor)

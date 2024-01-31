@@ -25,8 +25,9 @@ int main()
     Tree *tree = new Tree("sapin");
     Branch branch = Branch(5, 44);
     
-#if DEGUB
+
     tree->addBranch(branch);
+#if DEGUB
     tree->listBranches();
     Registry registry = Registry();
     registry.addTree(tree);
