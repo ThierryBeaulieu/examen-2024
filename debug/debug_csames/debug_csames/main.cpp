@@ -90,15 +90,15 @@ int main()
     tree->addBranch(branch);
     Swing swing = Swing(1, Swing::Type::babies, 3);
     tree->switchSwing(swing, 5);
-#if DEGUB
     tree->pushSwing(3);
     std::cout << tree->getSwing()->calculateHeight() << " == 3" << std::endl;
 
 
     std::cout << "Switching swing should reset height to 0" << std::endl;
-
+#if DEGUB
     tree->switchSwing(swing, 6);
     std::cout << tree->getSwing()->calculateHeight() << " == 0" << std::endl;
+    
 
     std::cout << "Switching should delete nullptr" << std::endl;
     Swing swing1 = Swing(1, Swing::Type::babies, 3);
