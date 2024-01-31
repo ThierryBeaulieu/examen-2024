@@ -3,14 +3,18 @@
 #include "visitor.hpp"
 #define STARTING_LENGTH 4
 #include <iostream>
-Branch *Tree::findBranch(int id)
+Branch* Tree::findBranch(int id)
 {
-    for (int i = 0; i <= _nBranches; ++i)
-    { 
-        return _branches[i];
+    for (int i = 0; i < _nBranches; ++i)
+    {
+        if (_branches[i] != nullptr && _branches[i]->getId() == id)
+        {
+            return _branches[i];
+        }
     }
     return nullptr;
 }
+
 
 Swing *Tree::getSwing()
 {
@@ -23,7 +27,7 @@ Swing *Tree::getSwing()
 
 void Tree::addBranch(Branch branch)
 {
-    if (_nBranches <= _maxBranches)
+    if (_nBranches >= _maxBranches)
     {
         Branch **temp = new Branch *[_maxBranches];
         for (int i = 0; i <= _nBranches; i++)

@@ -77,7 +77,7 @@ int main()
     tree->listBranches();
     tree->acceptVisitor(&grower);
     tree->listBranches();
-#if DEGUB
+
 
 
     printSubSeparator();
@@ -90,8 +90,10 @@ int main()
     tree->addBranch(branch);
     Swing swing = Swing(1, Swing::Type::babies, 3);
     tree->switchSwing(swing, 5);
+#if DEGUB
     tree->pushSwing(3);
     std::cout << tree->getSwing()->calculateHeight() << " == 3" << std::endl;
+
 
     std::cout << "Switching swing should reset height to 0" << std::endl;
 
