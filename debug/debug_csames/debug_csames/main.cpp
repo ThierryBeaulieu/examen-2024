@@ -27,7 +27,6 @@ int main()
     
 
     tree->addBranch(branch);
-#if DEGUB
     tree->listBranches();
     Registry registry = Registry();
     registry.addTree(tree);
@@ -35,6 +34,7 @@ int main()
     printSubSeparator();
 
     std::cout << "#2 Testing 1 Tree with 2 Branches and a registry" << std::endl;
+#if DEGUB
     registry = Registry();
     tree = new Tree("sapin");
     branch = Branch(5, 44);

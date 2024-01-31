@@ -17,7 +17,7 @@ void Registry::orderList()
 
 void Registry::addTree(Tree* tree)
 {
-    _trees[++_nTrees] = tree;
+    _trees[_nTrees++] = tree;
 }
 
 Registry::Registry()
