@@ -44,16 +44,18 @@ int main()
     registry.addTree(tree);
     std::cout << registry.getList()[0]->getName() << std::endl;
     printSubSeparator();
-#if DEGUB
     
     std::cout << "#6 Testing a lumberjack" << std::endl;
     Lumberjack lumberjack = Lumberjack();
+
     tree = new Tree("sapin");
     branch = Branch(5, 44);
     tree->addBranch(branch);
     branch = Branch(6, 45);
     tree->addBranch(branch);
     tree->acceptVisitor(&lumberjack);
+    
+#if DEGUB
 
     tree = new Tree("sapin");
     branch = Branch(7, 46);

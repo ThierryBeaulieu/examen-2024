@@ -4,7 +4,7 @@
 void Lumberjack::takeLog(Branch* branch) {
     if(_nBranch >= _mBranch) {
         Branch** temp = new Branch*[_mBranch *= 2];
-        for(int i = 0; i < _nBranch; ++i){
+        for(int i = 0; i < _nBranch; i++){
             temp[i] = branches[i];
         }
         delete[] branches;
@@ -26,6 +26,7 @@ Branch** Lumberjack::getBranches() {
 Lumberjack::Lumberjack() {
     branches = new Branch*[STARTING_LENGTH];
     _mBranch = STARTING_LENGTH;
+    _nBranch = 0;
 }
 Lumberjack::~Lumberjack() {
     delete branches;
