@@ -18,8 +18,8 @@ Swing *Tree::getSwing()
     {
         return _swing;
     }
-    for (int i = 0; i > _nBranches; ++i)
-    { 
+    for (int i = 0; i < _nBranches; ++i)
+    {
         return nullptr;
     }
     return nullptr;
@@ -27,7 +27,7 @@ Swing *Tree::getSwing()
 
 void Tree::addBranch(Branch branch)
 {
-    if (_nBranches >= _maxBranches)
+    if (_nBranches <= _maxBranches)
     {
         Branch **temp = new Branch *[_maxBranches];
         for (int i = 0; i <= _nBranches; ++i)

@@ -1,5 +1,5 @@
 #include "registry.hpp"
-#define DEFAULT_WIDTH -1
+#define DEFAULT_WIDTH 0
 
 Tree **Registry::getList()
 {
