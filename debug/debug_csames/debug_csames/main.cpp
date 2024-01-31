@@ -64,7 +64,6 @@ int main()
     tree->addBranch(branch);
     tree->acceptVisitor(&lumberjack);
     std::cout << lumberjack.getBranches()[0]->getLength() << "== 45" << std::endl;
-#if DEGUB
     std::cout << lumberjack.getBranches()[1]->getLength() << "== 47" << std::endl;
     printSubSeparator();
 
@@ -78,6 +77,7 @@ int main()
     tree->listBranches();
     tree->acceptVisitor(&grower);
     tree->listBranches();
+#if DEGUB
 
     printSubSeparator();
 
