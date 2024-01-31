@@ -36,7 +36,7 @@ void Tree::addBranch(Branch branch)
         }
         _branches = temp;
     }
-    _branches[++_nBranches] = &branch; 
+    _branches[_nBranches++] = &branch; 
 }
 
 Tree::Tree(std::string name)
