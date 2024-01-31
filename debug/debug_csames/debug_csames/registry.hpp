@@ -1,5 +1,9 @@
 #include "tree.hpp"
 #include <iostream>
+
+#ifndef REGISTRY_H
+#define REGISTRY_H
+
 class Registry {
     public:
         Tree** getList();
@@ -14,3 +18,5 @@ class Registry {
         int _mTrees;
         int _current;
 };
+
+#endif /* Registry.h */

@@ -5,7 +5,11 @@
 #include "swing.hpp"
 #include "branch.hpp"
 #include <string>
-#define DEFAULT_MAX_BRANCHES = 12
+
+#ifndef TREE_H
+#define TREE_H
+
+#define DEFAULT_MAX_BRANCHES 12
 class Visitor;
 class Tree
 {
@@ -31,3 +35,5 @@ private:
     int _maxBranches = DEFAULT_MAX_BRANCHES;
     Swing *_swing = nullptr;
 };
+
+#endif /* TREE_H */

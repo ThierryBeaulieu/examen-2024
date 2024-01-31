@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E4D8DFCD2B6ABAE9000BE118 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D8DFCC2B6ABAE9000BE118 /* main.cpp */; };
+		E4D8DFE02B6ABB40000BE118 /* grower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D8DFD42B6ABB40000BE118 /* grower.cpp */; };
+		E4D8DFE12B6ABB40000BE118 /* branch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D8DFD62B6ABB40000BE118 /* branch.cpp */; };
+		E4D8DFE22B6ABB40000BE118 /* registry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D8DFD82B6ABB40000BE118 /* registry.cpp */; };
+		E4D8DFE32B6ABB40000BE118 /* lumberjack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D8DFDA2B6ABB40000BE118 /* lumberjack.cpp */; };
+		E4D8DFE42B6ABB40000BE118 /* swing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D8DFDC2B6ABB40000BE118 /* swing.cpp */; };
+		E4D8DFE52B6ABB40000BE118 /* tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D8DFDD2B6ABB40000BE118 /* tree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,19 @@
 /* Begin PBXFileReference section */
 		E4D8DFC92B6ABAE9000BE118 /* debug_csames */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = debug_csames; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D8DFCC2B6ABAE9000BE118 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E4D8DFD32B6ABB40000BE118 /* lumberjack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lumberjack.hpp; sourceTree = "<group>"; };
+		E4D8DFD42B6ABB40000BE118 /* grower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grower.cpp; sourceTree = "<group>"; };
+		E4D8DFD52B6ABB40000BE118 /* swing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = swing.hpp; sourceTree = "<group>"; };
+		E4D8DFD62B6ABB40000BE118 /* branch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = branch.cpp; sourceTree = "<group>"; };
+		E4D8DFD72B6ABB40000BE118 /* grower.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = grower.hpp; sourceTree = "<group>"; };
+		E4D8DFD82B6ABB40000BE118 /* registry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = registry.cpp; sourceTree = "<group>"; };
+		E4D8DFD92B6ABB40000BE118 /* visitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = visitor.hpp; sourceTree = "<group>"; };
+		E4D8DFDA2B6ABB40000BE118 /* lumberjack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lumberjack.cpp; sourceTree = "<group>"; };
+		E4D8DFDB2B6ABB40000BE118 /* branch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = branch.hpp; sourceTree = "<group>"; };
+		E4D8DFDC2B6ABB40000BE118 /* swing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swing.cpp; sourceTree = "<group>"; };
+		E4D8DFDD2B6ABB40000BE118 /* tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tree.cpp; sourceTree = "<group>"; };
+		E4D8DFDE2B6ABB40000BE118 /* tree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tree.hpp; sourceTree = "<group>"; };
+		E4D8DFDF2B6ABB40000BE118 /* registry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = registry.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +76,19 @@
 		E4D8DFCB2B6ABAE9000BE118 /* debug_csames */ = {
 			isa = PBXGroup;
 			children = (
+				E4D8DFD62B6ABB40000BE118 /* branch.cpp */,
+				E4D8DFDB2B6ABB40000BE118 /* branch.hpp */,
+				E4D8DFD42B6ABB40000BE118 /* grower.cpp */,
+				E4D8DFD72B6ABB40000BE118 /* grower.hpp */,
+				E4D8DFDA2B6ABB40000BE118 /* lumberjack.cpp */,
+				E4D8DFD32B6ABB40000BE118 /* lumberjack.hpp */,
+				E4D8DFD82B6ABB40000BE118 /* registry.cpp */,
+				E4D8DFDF2B6ABB40000BE118 /* registry.hpp */,
+				E4D8DFDC2B6ABB40000BE118 /* swing.cpp */,
+				E4D8DFD52B6ABB40000BE118 /* swing.hpp */,
+				E4D8DFDD2B6ABB40000BE118 /* tree.cpp */,
+				E4D8DFDE2B6ABB40000BE118 /* tree.hpp */,
+				E4D8DFD92B6ABB40000BE118 /* visitor.hpp */,
 				E4D8DFCC2B6ABAE9000BE118 /* main.cpp */,
 			);
 			path = debug_csames;
@@ -119,7 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D8DFE12B6ABB40000BE118 /* branch.cpp in Sources */,
+				E4D8DFE32B6ABB40000BE118 /* lumberjack.cpp in Sources */,
 				E4D8DFCD2B6ABAE9000BE118 /* main.cpp in Sources */,
+				E4D8DFE22B6ABB40000BE118 /* registry.cpp in Sources */,
+				E4D8DFE42B6ABB40000BE118 /* swing.cpp in Sources */,
+				E4D8DFE02B6ABB40000BE118 /* grower.cpp in Sources */,
+				E4D8DFE52B6ABB40000BE118 /* tree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,8 @@
 #include "swing.hpp"
+
+#ifndef BRANCH_H
+#define BRANCH_H
+
 class Branch {
     public:
         int getLength();
@@ -13,3 +17,5 @@ class Branch {
         int _length;
         void grow();
 };
+
+#endif /* Branch.h */

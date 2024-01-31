@@ -1,5 +1,9 @@
 #include "branch.hpp"
 #include "visitor.hpp"
+
+#ifndef REGISTRY_H
+#define REGISTRY_H
+
 class Tree;
 class Lumberjack: public Visitor {
     public:
@@ -15,3 +19,5 @@ class Lumberjack: public Visitor {
         int _nBranch;
         int _mBranch;
 };
+
+#endif /* Registry.h */

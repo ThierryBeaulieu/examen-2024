@@ -1,3 +1,6 @@
+#ifndef SWING_H
+#define SWING_H
+
 class Swing
 {
 public:
@@ -15,6 +18,10 @@ private:
     Type _type;
     float _ropeLength;
     int _id;
-    int _horizontalPos = 0;
     int _direction = 0;
+public:
+    int _horizontalPos = 0;
 };
+
+
+#endif /* Swing.h */
