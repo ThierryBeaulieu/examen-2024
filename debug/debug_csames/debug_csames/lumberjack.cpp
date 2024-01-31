@@ -10,7 +10,7 @@ void Lumberjack::takeLog(Branch* branch) {
         delete[] branches;
         branches = temp;
     }
-    branches[++_nBranch] = branch;
+    branches[_nBranch++] = branch;
 }
 
 
