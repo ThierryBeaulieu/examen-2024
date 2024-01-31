@@ -44,6 +44,11 @@ Tree::Tree(std::string name)
     _name = name;
     _swing = nullptr;
     _nBranches = STARTING_LENGTH;
+    
+    _branches = new Branch*[STARTING_LENGTH];
+    for (int i = 0; i < STARTING_LENGTH; ++i) {
+        _branches[i] = nullptr;
+    }
 }
 
 void Tree::acceptVisitor(Visitor *visitor)
