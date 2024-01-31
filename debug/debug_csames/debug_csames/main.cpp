@@ -4,6 +4,8 @@
 #include "lumberjack.hpp"
 #include "grower.hpp"
 
+#define DEBUG 0
+
 void printSeparator()
 {
     std::cout << "\n" << "============================================================================================" << "\n" << std::endl;
@@ -22,6 +24,8 @@ int main()
     std::cout << "#1 Testing 1 Tree with 1 Branch and a registry" << std::endl;
     Tree *tree = new Tree("sapin");
     Branch branch = Branch(5, 44);
+    
+#if DEGUB
     tree->addBranch(branch);
     tree->listBranches();
     Registry registry = Registry();
@@ -116,6 +120,8 @@ int main()
 
     std::cout << "\n" << "End of program" << "\n";
     printSeparator();
+    
+#endif
     
     return 0;
 }
