@@ -30,7 +30,7 @@ void Tree::addBranch(Branch branch)
     if (_nBranches <= _maxBranches)
     {
         Branch **temp = new Branch *[_maxBranches];
-        for (int i = 0; i <= _nBranches; ++i)
+        for (int i = 0; i <= _nBranches; i++)
         {
             temp[i] = _branches[i];
         }
