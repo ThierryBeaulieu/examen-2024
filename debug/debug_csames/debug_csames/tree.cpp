@@ -18,10 +18,6 @@ Swing *Tree::getSwing()
     {
         return _swing;
     }
-    for (int i = 0; i < _nBranches; ++i)
-    {
-        return nullptr;
-    }
     return nullptr;
 }
 
