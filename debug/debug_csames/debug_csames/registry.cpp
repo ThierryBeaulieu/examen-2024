@@ -26,10 +26,7 @@ Registry::Registry()
     _nTrees = DEFAULT_WIDTH;
 }
 
-Registry::~Registry()
-{
-    delete (_trees);
-}
+
 
 // This should return the next tree in the list, if the end of the list is reached, it should start again from the beginning
 Tree* Registry::next()

@@ -14,13 +14,13 @@ public:
     ~Swing() = default;
 
 private:
-    void update(int = 1);
     Type _type;
     float _ropeLength;
     int _id;
     int _direction = 0;
 public:
     int _horizontalPos = 0;
+    void update(int = 1);
 };
 
 

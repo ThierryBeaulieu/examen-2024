@@ -15,6 +15,7 @@ class Branch {
         Swing* mySwing = nullptr;
         int _id;
         int _length;
+public:
         void grow();
 };
 

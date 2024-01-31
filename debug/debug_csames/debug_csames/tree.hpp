@@ -28,12 +28,14 @@ public:
     void pushSwing(int duration = 1);
 
 private:
-    void grow();
-    std::string _name;
     Branch **_branches;
+    std::string _name;
     int _nBranches = 0;
     int _maxBranches = DEFAULT_MAX_BRANCHES;
+public:
     Swing *_swing = nullptr;
+    void grow();
+
 };
 
 #endif /* TREE_H */

@@ -1,8 +1,8 @@
 #include "branch.hpp"
 #include "visitor.hpp"
 
-#ifndef REGISTRY_H
-#define REGISTRY_H
+#ifndef LUMBERJACK_H
+#define LUMBERJACK_H
 
 class Tree;
 class Lumberjack: public Visitor {
