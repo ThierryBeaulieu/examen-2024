@@ -3,7 +3,7 @@ import '../App.css';
 
 const NavBar = () => {
   return (
-    <div className='navigation'>
+    <div className='nav-bar'>
       <Link to='/'>Page principale</Link>
       <Link to='/about'>À propos</Link>
     </div>
