@@ -55,8 +55,7 @@ int main()
     tree->addBranch(branch);
     tree->acceptVisitor(&lumberjack);
     
-
-
+    
     tree = new Tree("sapin");
     branch = Branch(7, 46);
     tree->addBranch(branch);
@@ -79,7 +78,6 @@ int main()
     tree->listBranches();
 
 
-
     printSubSeparator();
 
     std::cout << "#8 Testing a swing" << std::endl;
@@ -92,18 +90,20 @@ int main()
     tree->switchSwing(swing, 5);
     tree->pushSwing(3);
     std::cout << tree->getSwing()->calculateHeight() << " == 3" << std::endl;
-
+#if DEBUG
 
     std::cout << "Switching swing should reset height to 0" << std::endl;
-#if DEGUB
     tree->switchSwing(swing, 6);
     std::cout << tree->getSwing()->calculateHeight() << " == 0" << std::endl;
-    
 
+    
     std::cout << "Switching should delete nullptr" << std::endl;
     Swing swing1 = Swing(1, Swing::Type::babies, 3);
     tree->switchSwing(swing1, 6);
+    
+#endif
 
+    
     printSubSeparator();
     std::cout << "#9 Testing iteration of registry" << std::endl;
     registry = Registry();
@@ -119,6 +119,8 @@ int main()
     branch = Branch(7, 46);
     tree->addBranch(branch);
     registry.addTree(tree);
+    
+#if DEBUG
 
     std::cout << registry.next()->getName() << " == sapin1" << std::endl;
     std::cout << registry.next()->getName() << " == sapin2" << std::endl;
@@ -129,6 +131,5 @@ int main()
     printSeparator();
     
 #endif
-    
     return 0;
 }

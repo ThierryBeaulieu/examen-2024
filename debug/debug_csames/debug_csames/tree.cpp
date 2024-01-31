@@ -5,7 +5,7 @@
 #include <iostream>
 Branch* Tree::findBranch(int id)
 {
-    for (int i = 0; i < _nBranches; ++i)
+    for (int i = 0; i < _nBranches; i++)
     {
         if (_branches[i] != nullptr && _branches[i]->getId() == id)
         {
